@@ -1,5 +1,28 @@
 Create an Amazon S3 bucket in the same AWS Region as the workflow for your input and output data.
 
+Cross-origin resource sharing (CORS) setting
+
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "PUT",
+            "POST",
+            "DELETE",
+            "HEAD"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+
+
+
 Step 1: Create a Work Team
 Open the SageMaker console at https://console.aws.amazon.com/sagemaker/.
 
